@@ -10,8 +10,6 @@ int main() {
 
     PNGFile.open(PNGPath, std::ios::binary);
 
-
-
     if(!PNGFile.is_open())
     {
         std::cout << "File is not opened";
@@ -44,6 +42,6 @@ int main() {
     }
 
     std::cout << "It is proper PNG file";
-
+    PNGFile.close();
     return 0;
 }
