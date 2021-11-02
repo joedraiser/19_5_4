@@ -16,13 +16,13 @@ int main() {
         exit(EXIT_FAILURE);
     }
 
-    std::string extension=PNGPath.substr(PNGPath.size()-3, PNGPath.size()-1);
-    for(int i=0;i<3;i++)
+    std::string extension=PNGPath.substr(PNGPath.size()-4, PNGPath.size()-1);
+    for(int i=0;i<4;i++)
     {
         extension[i]=tolower(extension[i]);
     }
 
-    if(extension!="png")
+    if(extension!=".png")
     {
         std::cout << "File has no png extension.";
         exit(EXIT_FAILURE);
